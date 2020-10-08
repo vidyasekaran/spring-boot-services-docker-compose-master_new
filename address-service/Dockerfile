@@ -4,6 +4,8 @@ FROM openjdk:8-jdk-alpine
 # Add Maintainer Info
 LABEL maintainer="sanchi.goyal.sg@gmail.com"
 
+WORKDIR /app
+
 # Add a volume pointing to /tmp
 VOLUME /tmp
 
