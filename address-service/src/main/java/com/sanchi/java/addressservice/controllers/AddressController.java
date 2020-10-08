@@ -17,6 +17,7 @@ public class AddressController {
   @GetMapping("/{member-id}/address")
   public ResponseEntity<Address> getAddress(@PathVariable("member-id") int memberId) {
     Address address = dataService.getAddress(memberId);
+    System.out.println("address"+address);
     return ResponseEntity.ok(address);
   }
 
