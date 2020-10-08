@@ -3,4 +3,4 @@ jdk: openjdk8
 services:
   - docker
 before_install:
-  - docker-compose -t vidyasekaran/spring-boot-services-docker-compose-master_new  -f ../docker up
+  - docker-compose up --build -d
