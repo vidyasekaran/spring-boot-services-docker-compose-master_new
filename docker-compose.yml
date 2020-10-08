@@ -3,15 +3,15 @@ version: "3"
 services:
   address-service:
     build:
-      context: ../address-service
-      dockerfile: ./Dockerfile
+      context: address-service
+      dockerfile: Dockerfile
     ports:
     - 8085:8085
 
   mail-service:
     build:
-      context: ../mail-service
-      dockerfile: ./Dockerfile
+      context: mail-service
+      dockerfile: Dockerfile
     ports:
     - 8086:8086
     environment:
